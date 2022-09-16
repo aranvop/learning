@@ -10,7 +10,7 @@ def HowEffect(day,degree,n):#计算一年后的效果
     else :
         return HowEffect(day+1,degree*(n+1),n)
 
-def funn(n):#计算努力程度
+def funn(n):#计算努力的程度
     while(abs(HowEffect(1,1.0,n)-37.78)>0.000000000001):
         if (HowEffect(1,1.0,n)>37.78 ):
             #print(n)
