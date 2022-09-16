@@ -5,13 +5,13 @@
 def HowEffect(day,degree,n):#计算一年后的效果
     if day==366:
         return degree
-    if (day%6==0|day%7==0):
+    if (day%6==0 or day%7==0):
         return HowEffect(day+1,degree*0.99,n)
     else :
         return HowEffect(day+1,degree*(n+1),n)
 
 def funn(n):#计算努力的程度
-    while(abs(HowEffect(1,1.0,n)-37.78)>0.000000000001):
+    while(abs(HowEffect(1,1.0,n)-37.78)>0.00000000000099):
         if (HowEffect(1,1.0,n)>37.78 ):
             #print(n)
             n=n+pow(HowEffect(1,1.0,n),1/365)-pow(37.78,1/365)
