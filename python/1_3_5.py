@@ -20,4 +20,4 @@ def funn(n):#计算努力的程度
             n=n+pow(37.78,1/365)-pow(HowEffect(1,1.0,n),1/365)
     return n
 print(HowEffect(1,1,funn(0.01)))
-print("工作日要努力到",funn(0.01),)
+print("工作日要努力到",funn(0.01))
