@@ -3,7 +3,8 @@ import random
 y=random.randint(0,100)
 print("请猜这个数是多少")
 x = int (input())#input输入的只能是字符串，所以需要转换为int类型
-while 1:
+count=10
+while (count!=0):
     if x<y:
         print("too small")
     if x>y:
@@ -11,4 +12,5 @@ while 1:
     if x==y:
         print("right")
         break
+    count=count-1
     x=int(input("请继续猜"))
