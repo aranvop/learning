@@ -34,7 +34,7 @@ $\qquad$因此,需要`-n`参数将没有匹配到的删除
 <img src="./sed1.png" width="50%" alt="未显示的sed流程图像">    
 sed流程 
 
-$\qquad$sed 命令实例:
+$\qquad$ sed 命令实例:
 ```sh
 sed "2,3p" ./bash_history -n
 sed "/1111/d" ./txt 
